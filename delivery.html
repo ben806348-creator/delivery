@@ -1,0 +1,214 @@
+<!DOCTYPE html><html><head>
+      <title>delivery</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\ben80\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.22\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="lade-delivery">LaDe Delivery </h1>
+<p>author：WENG<br>
+date："2026-04-13"</p>
+<h3 id="datasethttpshuggingfacecodatasetscainiao-ailade">DATASET：<a href="https://huggingface.co/datasets/Cainiao-AI/LaDe">https://huggingface.co/datasets/Cainiao-AI/LaDe</a> </h3>
+<h3 id="參考文獻lade-the-first-comprehensive-last-mile-delivery">參考文獻：LaDe: The First Comprehensive Last-mile Delivery </h3>
+<h5 id="城市">城市 </h5>
+<table>
+<thead>
+<tr>
+<th>城市</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>上海</td>
+<td>這是中國最繁榮的城市之一，每天訂單量龐大。</td>
+</tr>
+<tr>
+<td>杭州</td>
+<td>一個電子商務發達、日訂單量龐大的大城市。</td>
+</tr>
+<tr>
+<td>重慶</td>
+<td>中國某大城市，道路狀況複雜，訂單量龐大。</td>
+</tr>
+<tr>
+<td>吉林</td>
+<td>中國中等規模的城市，每天訂單量較少。</td>
+</tr>
+<tr>
+<td>煙台</td>
+<td>中國一個小城市，每天訂單量很少。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="lade-d">LaDe-D </h5>
+<p><img src="image-1.png" alt="alt text"></p>
+<h5 id="lade-p">LaDe-P </h5>
+<p><img src="image-2.png" alt="alt text"></p>
+<h2 id="專案目標">專案目標 </h2>
+<p>本專案旨在重新模擬與驗證由阿里巴巴菜鳥網絡提出的 LaDe 資料集 。該資料集是目前首個包含「收件 <code>Pick-up</code>」與「派送 <code>Delivery</code>」完整流程的大規模工業級資料集 。</p>
+<p><strong>核心目標</strong>：透過對百萬級包裹、兩萬名快遞員的真實營運數據進行建模，解決物流中最昂貴且耗時的「最後一哩路」挑戰 。</p>
+<p><strong>實作重點</strong>：<br>
+路線預測 (Route Prediction)：預算快遞員未完成任務的服務順序 。<br>
+ETA 預測：準確估算包裹到達或取件的時間點 。<br>
+時空圖 (STG) 預測 ：預測特定區域內未來的包裹單量，優化資源調度 。</p>
+<h2 id="前提摘要">前提摘要 </h2>
+<p>我們首先理解數據的空間與時間分佈。LaDe 數據集涵蓋了五個代表性城市，展現了不同的物流環境：</p>
+<p><strong>城市多樣性比較</strong>：</p>
+<ul>
+<li><strong>上海/杭州</strong>：高密度、電子商務發達，配送順序受高樓層與社區門禁影響大。</li>
+<li><strong>重慶</strong>：地形複雜（山城），二維平面距離可能誤導預測，需依賴配送員經驗。</li>
+<li><strong>吉林/煙台</strong>：訂單量較少，配送路徑相對稀疏且規則。</li>
+</ul>
+<p>這幾種城市型態也會反映在分布或是預測結果上。</p>
+<h2 id="route-prediction">Route Prediction </h2>
+<p>首先看空間分布圖：<br>
+<img src="image-3.png" alt="alt text"><br>
+不同代表了不同的物流特徵與城市規模</p>
+<ol>
+<li>上海 (SH) 與 杭州 (HZ)：圖中顯示這兩個城市的熱點分佈最為密集且廣泛。因為上海是最繁榮的城市之一，杭州則是電商發達的中心，兩者日訂單量皆非常龐大 。其熱點呈現多中心或連續性的塊狀分佈，也代表派送壓力極高，且服務範圍廣。</li>
+<li>重慶 (CQ)：熱點呈現較為破碎且分散。因為重慶以「山城」聞名，道路狀況極為複雜 。這種空間分佈反映了複雜的地形如何切分物流區域，使得快遞員在進行路線預測時面臨更大的挑戰。</li>
+<li>吉林 (JL) 與 煙台 (YT)：熱點數量顯著較少，分佈孤立。這兩者屬於中小型城市，日訂單量較少，反映在空間上就是需求點非常集中於少數核心區域，資料規模也較小。</li>
+</ol>
+<p>今天要預測出的路線預測為 <strong>「當配送員手上有多張訂單時，他接下來會按照什麼順序去取貨或送貨？」</strong>，不是在預測地圖上的一條位移距離的線，而是在預測一個 「動作的排列組合」。</p>
+<h4 id="具體預測內容">具體預測內容 </h4>
+<ol>
+<li><strong>目的地順序 (Destination Ranking):</strong><br>
+給定訂單的座標 (<code>lng</code>, <code>lat</code>) 和要求的時間窗口 (<code>accept_time</code>)，模型要預測配送員實際經過這些點的先後順序。</li>
+<li><strong>下一個動作 (Next-step Prediction):</strong><br>
+在每一個步驟，從剩餘未完成的任務中，挑選出最符合配送員行為邏輯（通常是為了效率或省時）的一點。</li>
+</ol>
+<h4 id="六種模型比較">六種模型比較 </h4>
+<p>選取了三種傳統方法和三種機器學習方法進行比較，機器學習中，又有兩種屬於深度學習需要另外建置訓練模型並調適參數，選擇其的原因為在<code>Graph2Route</code>是原文中表現最好的，另外再找<code>cproute</code>和他進行比較。</p>
+<p>傳統算法</p>
+<ul>
+<li>Distance-Greedy (距離貪婪)：預測配送員會永遠先去<strong>離目前最近</strong>的點。</li>
+<li>Time-Greedy (時間貪婪)：預測配送員會按照<strong>訂單產生的先後順序</strong>（或要求時間去送。</li>
+<li>OR-Tools (運籌優化)：這是 Google 開源的求解器，它預測配送員是一個完美的「數學家」，會算出<strong>總路程最短</strong>的理論最優解。</li>
+</ul>
+<p>機器學習與深度學習</p>
+<ul>
+<li>LightGBM： 透過特徵工程（如距離中心點多遠、與上點夾角等），預測<strong>每個點的優先級分數</strong>。</li>
+<li>CPRoute： 一種結合了指針網絡和注意力機制 的深度學習模型，專門處理「輸入序列與輸出順序相關」的問題。它還考慮了 <code>aoi_id</code>（興趣點區域），因為同一個商場的訂單通常會一起取。</li>
+<li>Graph2Route： 這是目前最先進的路徑預測模型之一。它把城市路網看作一個圖，利用 <strong>GCN</strong> 學習道路之間的空間關係，並結合 <strong>RNN (GRU)</strong> 捕捉時間序列特徵。</li>
+</ul>
+<h4 id="評估指標">評估指標 </h4>
+<p>程式碼最後輸出了四個指標，用來評估預測順序與真實順序的差距：</p>
+<ol>
+<li>HR@3： 預測的前三個點中，有多少比例真的出現在真實的前三個點裡。</li>
+<li>KRC： 衡量兩個序列的相關性，數值越接近1，代表預測的順序走向與真實情況越一致。</li>
+<li>LSD： 預測位置與真實位置在序列中的平均排名差距。</li>
+<li>ED： 預測序列要經過多少次修改（增加、刪除、更換）才能變成真實序列，數值越小越好。</li>
+</ol>
+<h4 id="模型測試結果">模型測試結果 </h4>
+<p><img src="image-6.png" alt="alt text"><br>
+<img src="image-7.png" alt="alt text"><br>
+<img src="image-8.png" alt="alt text"><br>
+<img src="image-9.png" alt="alt text"><br>
+<img src="image-10.png" alt="alt text"><br>
+<img src="image-12.png" alt="alt text"></p>
+<h5 id="1模型整體表現">1.模型整體表現 </h5>
+<p>深度學習模型（<code>CPRoute</code>、<code>Graph2Route</code>）整體表現最佳<br>
+在所有城市中，HR@3 與 KRC 明顯高於傳統方法<br>
+同時在 LSD 與 ED（誤差類指標）上顯著較低<br>
+傳統方法Or-Tools 表現優於 Greedy 類方法<br>
+但仍無法捕捉真實配送員的行為模式（如 AOI、時間壓力）</p>
+<h5 id="2cproute-vs-graph2route">2.CPRoute vs Graph2Route </h5>
+<p>不確定<code>Graph2Route</code>是否能超越<code>cproute</code>的原因是否為圖神經網路較能處理路線預測資料，因為兩者結果接近，並且已經過多次調參</p>
+<p><code>Graph2Route</code>在經過多次訓練，效果明顯提升，大部分都優於所有測試方法，但在和<code>cproute</code>比較時，有些略低於<code>cproute</code>，可能是因為在做參數調整時需要更精細的調配，但應該需要更好的配置來完成，不然用grid或自動之類的調參很容易因資料量而爆炸。</p>
+<p><code>Graph2Route</code>和<code>cproute</code>兩者在Epochs上皆做了調整，在初代因訓練時常過久後放棄調整為1和10，但效果欠佳，常常效果不及傳統模型，直到調整至30以上才出現較好效果，但訓練又需要控制因為資料量過多時常出現梯度爆炸的問題，並且要調整LR權重去確保訓練效率避免精細震盪<br>
+尤其是用了GRU和GCN的<code>Graph2Route</code>常會因此而需要重新訓練，訓練成本可能也是會需要考慮的因素。</p>
+<p>未來可進一步結合 Transformer 或　RL，將路線預測從模仿的預測行為提升為策略最佳化，以更貼近真實物流決策。</p>
+<h2 id="estimated-time-of-arrival-prediction">Estimated Time of Arrival Prediction </h2>
+<p><img src="image-11.png" alt="alt text"><br>
+派送耗時 (橘色區域)：<br>
+密度高峰出現在 50 分鐘 左右，且曲線在到達 100 分鐘後明顯下降 ，這反映了派送包裹在離開倉庫前，任務量與順序已大致固定，因此路徑規劃較具效率且預測性較強 。</p>
+<p>取件耗時 (藍色區域)：<br>
+分佈較廣：密度高峰出現在 100 分鐘 附近，且整體分佈較為扁平，可能原因為由於取件需求是隨時產生的，快遞員必須在行程中動態調整路徑，這種隨機性與不確定性導致了更長的平均耗時 。</p>
+<h4 id="模型">模型 </h4>
+<ul>
+<li>SPEED 模型 ：用最基礎的公式 <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>T</mi><mi>i</mi><mi>m</mi><mi>e</mi><mo>=</mo><mi>D</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>a</mi><mi>n</mi><mi>c</mi><mi>e</mi><mi mathvariant="normal">/</mi><mi>S</mi><mi>p</mi><mi>e</mi><mi>e</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">Time=Distance/Speed</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">im</span><span class="mord mathnormal">e</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mord mathnormal">an</span><span class="mord mathnormal">ce</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal">p</span><span class="mord mathnormal">ee</span><span class="mord mathnormal">d</span></span></span></span></span>會先計算該城市歷史資料的「平均每分鐘移動公里數」，然後直接把測試集的「距離」除以這個平均速度來當作 ETA，但無法判斷其他條件。</li>
+<li>KNN ：當要預測某個包裹的 ETA 時，它會在歷史資料庫中尋找「特徵最相似」的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span> 個包裹，然後把這<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span>個包裹的實際花費時間取平均。</li>
+<li>LightGBM ：。建立許多棵決策樹，每一棵新樹都在試圖修正前面犯下的錯誤梯度提升。</li>
+<li>MLP ：透過設定隱藏層，透過神經元之間的權重調整與非線性激勵函數，去學習特徵與 ETA 之間複雜的數學映射關係。</li>
+</ul>
+<h4 id="資料預處理">資料預處理 </h4>
+<p>清洗錯誤格式資料和極端值的過濾，並加入時間與週期特徵和編碼類別</p>
+<h4 id="評估指標-1">評估指標 </h4>
+<ul>
+<li>MAE (平均絕對誤差)：預測包裹數與真實包裹數的絕對誤差平均。</li>
+<li>RMSE (均方根誤差)：相較於 MAE，RMSE 會將誤差平方，因此對極端誤差更為敏感。</li>
+<li>ACC@20 (誤差在 20 分鐘內的命中率)：顧客滿意度指標，如果 ACC@20 是 75%，代表 100 個客人裡面，有 75 個人的包裹都在我們承諾的時間誤差範圍內送達。</li>
+</ul>
+<h4 id="模型測試結果-1">模型測試結果 </h4>
+<p><img src="image-18.png" alt="alt text"></p>
+<p>SPEED的效果最差，代表簡單的預測方式無法處理ETA，另外在ACC@20中KNN 表現特別突出，這代表「直接找歷史上特徵最相似的 5 筆訂單來平均」，在目前我們抽取的特徵下，反而能命中最多 20 分鐘內的區間。另外，在實際和預測的線性圖中，紅線為如果完美預測會貼合的線，可以看到藍點大多落在紅線上方（模型高估了時間）；而在圖的右半邊（實際時間超過 200 分鐘的慢件），藍點大多落在紅線下方（模型低估了時間），這代表模型遇到極端狀況時會偏保守，不敢猜太快或太慢，而是傾向猜一個中間值。</p>
+<h2 id="spatio-temporal-graph-stg-forecasting">Spatio-Temporal Graph (STG) Forecasting </h2>
+<p>在物流配送情境中，各區域的包裹量並非獨立變數，而是受到時間週期與空間相鄰性的雙重影響，給定歷史的圖形訊號（過去的觀測數據），來預測未來的圖形訊號。</p>
+<h4 id="模型-1">模型 </h4>
+<p>傳統模型</p>
+<ul>
+<li>HA (Historical Average)：歷史平均法，直接將過去 24 小時的數值作為未來 24 小時的預測基準。</li>
+<li>Linear Baseline：單純的全連接線性映射，將歷史數據進行線性轉換。</li>
+<li>MLP Baseline：加入非線性激活函數 (<code>ReLU</code>) 的多層感知機。</li>
+<li>LSTM Baseline：遞迴神經網路，僅捕捉時間序列依賴，但缺乏空間拓樸資訊。</li>
+</ul>
+<p>深度時空圖神經網路</p>
+<ul>
+<li>STGCN (Spatio-Temporal Graph Convolutional Network)
+<ul>
+<li>空間特徵：透過圖卷積 (GCN) 將特徵與鄰接矩陣 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> 相乘，聚合空間鄰居的資訊。</li>
+<li>時間特徵：結合 1D 卷積 (TCN) 提取時間軸上的推移依賴。</li>
+</ul>
+</li>
+<li>DCRNN (Diffusion Convolutional Recurrent Neural Network)
+<ul>
+<li>空間特徵：使用擴散卷積 (Diffusion Convolution) 機制捕捉空間層面的擴散關聯 。</li>
+<li>時間特徵：以 GRU (Gated Recurrent Unit) 為核心結構，動態記憶與更新長期時序狀態。</li>
+</ul>
+</li>
+</ul>
+<h4 id="評估指標-2">評估指標 </h4>
+<ul>
+<li>MAE (平均絕對誤差)：預測包裹數與真實包裹數的絕對誤差平均。</li>
+<li>RMSE (均方根誤差)：相較於 MAE，RMSE 會將誤差平方，因此對極端誤差更為敏感。</li>
+</ul>
+<h4 id="模型測試結果-2">模型測試結果 </h4>
+<p><img src="image-13.png" alt="alt text"><br>
+<img src="image-14.png" alt="alt text"><br>
+<img src="image-15.png" alt="alt text"><br>
+<img src="image-16.png" alt="alt text"><br>
+<img src="image-17.png" alt="alt text"></p>
+<p>在整體模型中，HA表現較好可能是模型資料有極強的規律性，像是物流包裹的數量通常有著極其規律性。<br>
+但通過與原文判斷深度圖時空網路會表現較好，但我自己嘗試調整訓練次數後卻沒有太大變化，所以推測在文章中對資料可能做調整或模型的其他參數變化來實現，但在訓練次數少的狀況下，深度時空網路雖然不及傳統模型，但大多其實表現差不多，代表模型訓練其實趨於穩定，表現也是不錯的，也可以推斷原始資料中資料本身就出現的穩定性而導致，使用HA除了效能好外，也可以減少計算成本的開支。</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
